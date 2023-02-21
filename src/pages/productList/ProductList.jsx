@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteProduct, getProducts } from "../../redux/apiCalls";
-import { productRows } from "../../dummyData";
+import { productRows } from "../../mockData";
 
 export default function ProductList() {
   const dispatch = useDispatch();

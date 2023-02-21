@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import './product.css';
 import Chart from '../../components/chart/Chart';
-import { productData } from '../../dummyData';
+import { productData } from '../../mockData';
 import { Publish } from '@mui/icons-material';
 import { useSelector } from 'react-redux';
 import { useMemo, useState } from 'react';

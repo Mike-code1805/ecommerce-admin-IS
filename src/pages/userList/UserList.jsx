@@ -2,7 +2,7 @@ import "./userList.css";
 import { DataGrid } from '@mui/x-data-grid';
 
 import { DeleteOutline } from "@mui/icons-material";
-import { userRows } from "../../dummyData";
+import { userRows } from "../../mockData";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
