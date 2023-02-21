@@ -1,4 +1,5 @@
 import Home from '../pages/home/Home';
+import NewProduct from '../pages/newProduct/NewProduct';
 import NewUser from '../pages/newUser/NewUser';
 import Product from '../pages/product/Product';
 import ProductList from '../pages/productList/ProductList';
@@ -36,9 +37,9 @@ export const routes = [
     component: Product,
     name: '',
   },
-  // {
-  //   path: '/newproduct',
-  //   component: NewProduct,
-  //   name: 'Nuevo Producto',
-  // },
+  {
+    path: '/newproduct',
+    component: NewProduct,
+    name: 'Nuevo Producto',
+  },
 ];
