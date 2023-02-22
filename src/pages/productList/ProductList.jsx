@@ -1,5 +1,5 @@
 import "./productList.css";
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid } from "@mui/x-data-grid";
 import { DeleteOutline } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -28,7 +28,7 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <div className="productListItem">
-            <img className="productListImg" src={params.row.img} alt="" />
+            <img className="productListImg" src={params.row.image} alt="" />
             {params.row.title}
           </div>
         );
@@ -47,12 +47,12 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={"/product/" + params.row.id}>
+            <Link to={"/product/" + params.row._id}>
               <button className="productListEdit">Edit</button>
             </Link>
             <DeleteOutline
               className="productListDelete"
-              onClick={() => handleDelete(params.row.id)}
+              onClick={() => handleDelete(params.row._id)}
             />
           </>
         );
@@ -63,10 +63,10 @@ export default function ProductList() {
   return (
     <div className="productList">
       <DataGrid
-        rows={productRows}
+        rows={products}
         disableSelectionOnClick
         columns={columns}
-        getRowId={(row) => row.id}
+        getRowId={(row) => row._id}
         pageSize={8}
         checkboxSelection
       />
