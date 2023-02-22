@@ -5,7 +5,7 @@ const BASE_URL = process.env.REACT_APP_PORT;
 //   JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser
 //     .accessToken || "";
 
-const user = JSON.parse(localStorage.getItem("persist:root6"))?.user;
+const user = JSON.parse(localStorage.getItem("persist:root"))?.user;
 const currentUser = user && JSON.parse(user).currentUser;
 const TOKEN = currentUser?.accessToken;
 

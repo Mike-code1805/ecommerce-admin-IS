@@ -14,7 +14,7 @@ import {
 import storage from "redux-persist/lib/storage";
 
 const persistConfig = {
-  key: "root6",
+  key: "root",
   version: 1,
   storage,
 };
