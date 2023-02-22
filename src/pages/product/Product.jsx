@@ -4,7 +4,7 @@ import Chart from '../../components/chart/Chart';
 import { productData } from '../../mockData';
 import { Publish } from '@mui/icons-material';
 import { useSelector } from 'react-redux';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 
 export default function Product() {
   const location = useLocation();
@@ -23,23 +23,6 @@ export default function Product() {
     });
   };
 
-  const MONTHS = useMemo(
-    () => [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Agu',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ],
-    []
-  );
 
   return (
     <div className='product'>

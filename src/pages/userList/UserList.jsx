@@ -1,17 +1,15 @@
 import "./userList.css";
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid } from "@mui/x-data-grid";
 
 import { DeleteOutline } from "@mui/icons-material";
 import { userRows } from "../../mockData";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { getUsers, deleteUser } from "../../redux/apiCalls";
 
 export default function UserList() {
-  const [data, setData] = useState(userRows);
   const dispatch = useDispatch();
-  const users = useSelector((state) => state.user.users);
 
   useEffect(() => {
     getUsers(dispatch);
@@ -20,7 +18,7 @@ export default function UserList() {
   const handleDelete = (id) => {
     deleteUser(id, dispatch);
   };
-  
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
@@ -30,8 +28,14 @@ export default function UserList() {
       renderCell: (params) => {
         return (
           <div className="userListUser">
-            <img className="userListImg" src={params.row.img ||
-                "https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif"} alt="" />
+            <img
+              className="userListImg"
+              src={
+                params.row.img ||
+                "https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif"
+              }
+              alt=""
+            />
             {params.row.username}
           </div>
         );
