@@ -1,15 +1,54 @@
-# Getting Started with Create React App
+# Nombre del Proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Breve descripción del proyecto y su propósito.
 
-## Available Scripts
+## Tecnologías utilizadas
 
-In the project directory, you can run:
+- React
+- Redux
+- HTML
+- CSS
+- JavaScript
 
-### `npm start`
+## Requerimientos del sistema
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js
+- NPM
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalación
+
+1. Clonar el repositorio
+```
+git clone https://github.com/TuUsuario/nombre-del-repositorio.git
+```
+
+2. Instalar las dependencias
+```
+npm install
+```
+
+3. Iniciar el servidor local
+```
+npm start
+```
+
+4. Abre el navegador e ingresa a la dirección:
+
+http://localhost:3000/
+
+
+## Características
+
+- Lista de características y funcionalidades del proyecto.
+
+## Capturas de pantalla
+
+- Capturas de pantalla del proyecto.
+
+## Contribución
+
+- Instrucciones sobre cómo contribuir al proyecto.
+
+## Licencia
+
+- Tipo de licencia que se está utilizando en el proyecto.
