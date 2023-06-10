@@ -48,7 +48,3 @@ http://localhost:3000/
 ## Contribución
 
 - Instrucciones sobre cómo contribuir al proyecto.
-
-## Licencia
-
-- Tipo de licencia que se está utilizando en el proyecto.
