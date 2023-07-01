@@ -8,7 +8,7 @@ Breve descripción del proyecto y su propósito.
 - Redux
 - HTML
 - CSS
-- JavaScript
+- Typescript
 
 ## Requerimientos del sistema
 
